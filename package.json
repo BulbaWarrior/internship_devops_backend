@@ -8,6 +8,7 @@
     "client": "npm start --prefix client",
     "server": "nodemon server",
     "start": "node server",
+    "lint": "eslint ./",
     "heroku-postbuild": "cd client && npm install & npm run build",
     "migrate": "node-pg-migrate"
   },
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/AndrewJBateman/pern-stack-database#readme",
   "devDependencies": {
     "concurrently": "^6.2.0",
+    "eslint": "^7.30.0",
     "nodemon": "^2.0.7"
   },
   "dependencies": {
